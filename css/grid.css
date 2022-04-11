@@ -1,0 +1,13 @@
+body {
+    display: grid;
+}
+footer {
+    grid-row: 200;
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+section {
+    grid-row: 3;
+}

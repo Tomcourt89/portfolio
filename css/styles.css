@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+body {
+    height: 100vh;
+    margin: auto;
+    background: #25292B;
+}
+
+
+main {
+    padding: 30px;
+}
+header {
+    padding: 0px 150px;
+    border-bottom: 1px solid grey;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+nav ul li {
+    margin: 20px 50px;
+    padding: 20px 50px;
+}
+nav ul li a {
+    font-size: 1.5rem;
+}
+.active {
+    font-size: 2rem;
+}
+
+ul li {
+    list-style-type: none;
+}
+ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+section img {
+    width: 50%;
+    box-shadow: 1px 1px 10px 0px #000000;
+}
+
+img {
+    width: 20%;
+}
+footer {
+    border-top: 1px solid grey;
+}
+footer ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer ul li {
+    margin: 5px 30px;
+}
+footer ul li i {
+    padding: 0px 5px;
+}
+footer ul li a {
+    display: flex;
+    align-items: center;
+}
+
+.fa-twitter {
+    color: #1DA1F2;
+}
+.fa-linkedin {
+    color: #0077B5;
+}
+.fa-github {
+    color: #e8eaea;
+}
