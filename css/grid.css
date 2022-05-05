@@ -4,10 +4,14 @@ body {
 footer {
     grid-row: 200;
 }
-main {
+.split{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 section {
     grid-row: 3;
+}
+.prototype {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }

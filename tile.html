@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Home</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/grid.css">
     <script src="https://kit.fontawesome.com/6f7092e937.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -28,27 +29,98 @@
         </nav>
     </header>
 
-    <a href="https://www.figma.com/proto/p9EM7LwV6zkS3Q8jcbIX2k/Portfolio-Designs?page-id=0%3A1&node-id=10%3A122&viewport=241%2C48%2C0.29&scaling=min-zoom&starting-point-node-id=6%3A62&show-proto-sidebar=1">Prototype Link</a>
+    <article>
+        <section>
+            <h2>The Brief</h2>
+            <p>In this task the client had an administrative system where when logged in as an employer, it was possible to search a list of available participants. 
+                The search results were presented as a tile based layout which was requested to be retained.
+                However, there was limited data in those tiles and an exploration was requested of how the tiles could be redesigned to include the following information to improve the current system (pictured):
+            </p>
 
-    <!-- Delete this and just type these out -->
-    <img src="images/tileBrief/smallbrief.png" alt="Description of the task">
-    
-    <img src="images/tileBrief/originalTile.png" alt="Image of the original product to be redesigned">
-    <img src="images/tileBrief/smalldesign.jpg" alt="Hand drawn design of possible functionality">
-    <img src="images/tileBrief/smalldesign2.jpg" alt="Hand drawn design of possible functionality">
-    <img src="images/tileBrief/smalldesign3.jpg" alt="Hand drawn design of possible functionality">
-    <img src="images/tileBrief/smallaccordian.png" alt="Potential design solution">
-    <img src="images/tileBrief/smallaccordianstate1.png" alt="Functionality of potential solution">
-    <img src="images/tileBrief/smallaccordianstate2.png" alt="Alternative functionality of potential solution">
-    <img src="images/tileBrief/slide.png" alt="Potential design solution">
-    <img src="images/tileBrief/slidestate1.png" alt="Functionality of potential solution">
-    <img src="images/tileBrief/slidestate2.png" alt="Alternative functionality of potential solution">
-    <img src="images/tileBrief/slidestate2alt.png" alt="Alternative functionality of potential solution">
-    <img src="images/tileBrief/smallfinal.png" alt="Final proposed design overview">
-    <img src="images/tileBrief/smalltile.png" alt="Small tiled version of the final design">
-    <img src="images/tileBrief/smalltoggled.png" alt="Large tiled version of the final design">
-    <img src="images/tileBrief/smallpopup.png" alt="Popup box feature in the final design">
-    <img src="images/tileBrief/smallreview.png" alt="Review highlighting feature in the final design">
+                <div class="container">
+                    <ul>
+                        <li>Name</li>
+                        <li>Program</li>
+                        <li>Age</li>
+                        <li>Availability Dates</li>
+                        <li>Top 3 Skills</li>
+                        <li>Profile Photo</li>
+                        <li>Option To Interview</li>
+                        <li>Primary Language (and any others)</li>
+                        <li>Student Status</li>
+                    </ul>
+                    <img src="images/tileBrief/originalTile.png" alt="Image of the original product to be redesigned">
+                </div>
+        </section>
+
+        <section>
+            <h2>Ideation</h2>
+            <p>This task was given a purely design and UX focused approach through the use of 
+                <a href="https://www.figma.com/proto/p9EM7LwV6zkS3Q8jcbIX2k/Portfolio-Designs?page-id=0%3A1&node-id=10%3A122&viewport=241%2C48%2C0.29&scaling=min-zoom&starting-point-node-id=6%3A62&show-proto-sidebar=1">Figma</a> to explore various display methods.</p>
+            <p>The initial ideation process was, however, conducted using pen and paper to get a feel for tile sizing, how much information would be shown and how interactivity might exist within the system. 
+                I believed that an expanding tile that showed a selection, or the most pertinent, of information initially and the rest upon clicking was the best approach. Several potential methods were drawn up:
+            </p>
+            
+            <div class="figure">
+                <p>A minimal tile layout with a large expanding popup on click that would contain almost all the required information. This popup would overlap all other tiles until it is closed.
+                    Additionally a hover system in the corner of each tile was explored to add functionality of pinning a specific tile for review or download the full pdf of each participants application.
+                </p>
+                <img src="images/tileBrief/smalldesign.jpg" alt="Hand drawn design of possible functionality">
+            </div>
+            <div class="figure">
+                <p>A larger tile layout with headings for a selection of information such as name and age. Clicking on some of these headings would expand the tile vertically to reveal more information. The interactivity of these tiles was also explored
+                    in how they would either overlap tiles beneath them or shuffle everything down.
+                </p>
+                <img src="images/tileBrief/smalldesign2.jpg" alt="Hand drawn design of possible functionality">
+            </div>
+            <div class="figure">
+                <p>A variation on the vertical expansion was also conceived where a box containing information would expand below each tile. The shape of this box would change depending on the placement of the tile that was clicked.
+                    As with previous designs the way these boxes would interact with other tiles was explored in overlapping content and also vertical shuffling.
+                </p>
+                <img src="images/tileBrief/smalldesign3.jpg" alt="Hand drawn design of possible functionality">
+            </div>
+        </section>
+
+        <section>
+            <h2>Prototyping</h2>
+            <div class="prototype">
+                <div>
+                    <p>The above designs were prototyped in Figma to give a higher level of detail and understanding to their functionality including the way that the expansions would interact with other tiles on the page.</p>
+                    <p>All of the required information was added to these designs as well as the inclusion of the hover elements to the corners of each tile.</p>
+                    <p>These designs were ultimately disposed of in favour of the expanding popup style. A higher fidelity prototype was then created with this feature.</p>
+                </div>
+                <img src="images/tileBrief/smallaccordian.png" alt="Potential design solution">
+                <img src="images/tileBrief/smallaccordianstate1.png" alt="Functionality of potential solution">
+                <img src="images/tileBrief/smallaccordianstate2.png" alt="Alternative functionality of potential solution">
+                <img src="images/tileBrief/slide.png" alt="Potential design solution">
+                <img src="images/tileBrief/slidestate1.png" alt="Functionality of potential solution">
+                <img src="images/tileBrief/slidestate2.png" alt="Alternative functionality of potential solution">
+                <img src="images/tileBrief/slidestate2alt.png" alt="Alternative functionality of potential solution">
+            </div>
+        </section>
+
+        <section>
+            <h2>Final Design</h2>
+            <p>As detailed above, the final design used the expanding popup display for each tile. The initial view of each tile would contain the users profile photo in addition to their name and age.</p>
+            <p>An additional feature included in this design was a set of filters at the top of the page which when options were selected by the employer would give each participant a candicacy rating to give a numerical value to how much they match
+                what the employer is searching for. The participants would then be displayed in decending order based on their rating. This was done to give the employer incentive to click on specific tiles over others so that they may see the expanded popup
+                which contained the rest of the required information should the employer need to see it.
+            </p>
+            <div class="prototype">
+                <img src="images/tileBrief/smalltile.png" alt="Small tiled version of the final design">
+                <img src="images/tileBrief/smallpopup.png" alt="Popup box feature in the final design">
+            </div>
+            <p>Upon presenting this design to stakeholders, the variable tile layout was determined to be a valuable feature, as each user of this system may have differing preferences. As a result, a toggle was included which would switch the display between
+                smaller tiles with minimal information, and larger tiles with a slightly expanded amount of information. Functionality remained consistent with the popup but this allowed for more freedom in how the system was used.
+            </p>
+            <p>The final Figma prototype and its functionality can be found
+                <a href="https://www.figma.com/proto/p9EM7LwV6zkS3Q8jcbIX2k/Portfolio-Designs?page-id=0%3A1&node-id=10%3A122&viewport=241%2C48%2C0.29&scaling=min-zoom&starting-point-node-id=6%3A62&show-proto-sidebar=1">here</a>.</p>
+            <div class="prototype">
+                <img src="images/tileBrief/smallfinal.png" alt="Final proposed design overview">
+                <img src="images/tileBrief/smalltoggled.png" alt="Large tiled version of the final design">
+            </div>
+        </section>
+    </article>
 
     <footer>
         <ul>
