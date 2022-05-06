@@ -1,3 +1,5 @@
+/* Grid layout added for the split screen functionality */
+
 body {
     display: grid;
 }
